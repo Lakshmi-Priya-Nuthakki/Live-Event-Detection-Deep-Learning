@@ -1,0 +1,36 @@
+1. Download or extract the files from the live_event_detection (1).
+
+2. Download Anaconda Navigator.
+
+3. Open the main file,"Main", and check for all the required libraries.
+
+4. Install all the required libraries.
+
+6. The required libraries are listed as follows:
+
+   Base:
+   - opencv-python>=4.1.1
+   - mediapipe
+   - numpy>=1.23.5
+   - time
+   - sqlite3
+   - logging
+   - os
+
+   Extras:
+   - playsound 1.3.0
+   - gTTS 2.5.1
+
+7. Once all the libraries are installed.
+
+8. Go to Anaconda Environment and click on "live" then "open terminal".
+
+8. Terminal will open. Change the path to the project directory.
+
+9. You can change the path by using the command "cd 'Your Project Path'", then press enter.
+
+10. Once the path is changed, use the command "python Main.py" to run the program.
+
+11. Program will output the required result then press "q" to exit.
+
+12. Once program exits go the project files and click on "Fall Detected " MP3 file which gives the alert notification.
