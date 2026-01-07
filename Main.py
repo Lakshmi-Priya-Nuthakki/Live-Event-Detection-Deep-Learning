@@ -54,14 +54,9 @@ def fall_detect(frame, current_keypoints, threshold, fall_time_start):
             print("Fall Detected")
     return fall_time_start
 
-# The rest of your code follows...
-
-
-
 def forbidden_zone(frame, current_keypoints, threshold, forbidden_timer):
 
     mail_title = "Forbiden Zone"
-    
     
     if current_keypoints[30].visibility >= threshold or current_keypoints[31].visibility  >= threshold: 
         try:
@@ -113,7 +108,6 @@ def auto_mail(date, mail_title, mail_body, email_sender, email_password, email_r
     import smtplib
     import os
 
-
     smtp = smtplib.SMTP('smtp.gmail.com', 587)
     smtp.ehlo()
     smtp.starttls()
@@ -142,8 +136,6 @@ logging.basicConfig(filename="logfile.txt",format="%(asctime)s %(message)s",file
 width = int(cap.get(3))
 height = int(cap.get(4))
 
-
-#If you want to save it as a video. Remove the 2 comment lines below
 fourcc = cv2.VideoWriter_fourcc(*'MP4V')
 videoo = cv2.VideoWriter('video.mp4', fourcc, 20.0, (width, height))
 
